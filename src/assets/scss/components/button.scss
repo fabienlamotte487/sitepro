@@ -1,0 +1,26 @@
+@use '../variables' as *;
+
+button{
+    &.primary{
+        background: $degrade-primary;
+    }
+
+    padding: .75rem 2rem;
+    border: none;
+    border-radius: 30px;
+    transition: opacity .3s ease;
+
+    & a{
+        text-decoration: none;
+        color: white;
+        font-family: $secondary-font;
+        font-weight: 500;
+    }
+
+    @media (min-width: $lg-screen){
+        &:hover{
+            opacity: .8;
+            cursor: pointer;
+        }
+    }
+}

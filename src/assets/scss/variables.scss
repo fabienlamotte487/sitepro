@@ -1,0 +1,26 @@
+/* colors */
+$primary-1: #FA9A10;
+$primary-2: #EB3738;
+$secondary-1: #00E1CD;
+$secondary-2: #6E39D5;
+$dark: #2E3035;
+$darkest: #1B1D20;
+$success: #56B53E;
+$error: #A70E0E;
+
+$degrade-primary: linear-gradient(to bottom, $primary-1, $primary-2);
+
+/* fonts */
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$main-font: "jomhuria";
+$secondary-font: "roboto";
+
+$sm-screen: 576px;
+$md-screen: 768px;
+$lg-screen: 992px;
+$xl-screen: 1200px;
+$xxl-screen: 1400px;
+
+$gutters: 2rem;
+$gutters-responsive: 1rem;

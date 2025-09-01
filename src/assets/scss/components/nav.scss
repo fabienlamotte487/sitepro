@@ -1,0 +1,185 @@
+@use '../variables' as *;
+
+header{
+    background-color: $darkest;
+
+    nav{
+        &#nav_responsive{
+            display: flex;
+            position: relative;
+            width: 100%;
+
+            div{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1rem;
+                z-index: 1;
+                width: 100%;
+                border-bottom: 1px solid white;
+                background-color: $darkest;
+            }
+            ul{
+                position: absolute;
+                top: -200%;
+                width: 100%;
+                overflow: hidden;
+                left: 0;
+                right: 0;
+                background-color: $darkest;
+                padding: 1rem 0;
+                transition: top .3s ease;
+                z-index: 0;
+                display: flex;
+                flex-direction: column;
+            }
+
+            #burger-menu{
+                height: 30px;
+                width: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+
+                > div{
+                    all: inherit;
+                    height: 3px;
+                    width: 100%;
+                    background: white;
+                    transition: all .3s ease;
+                }
+            }
+
+            &.showed{
+                ul{
+                    top: calc(100% + 1px);
+                }
+
+                #burger-menu{
+                    div:nth-child(1) {
+                        transform: translateY(10px) rotate(45deg);
+                    }
+
+                    div:nth-child(2) {
+                        opacity: 0;
+                        transform: translateX(-5px)
+                    }
+
+                    div:nth-child(3) {
+                        transform: translateY(-10px) rotate(-45deg);
+                    }
+                }
+            }
+        }
+        
+        background-color: $darkest;
+        display: none;
+        justify-content: center;
+        align-items: center;
+
+        ul{
+            display: flex;
+            list-style-type: none;
+            li {
+                padding: .5rem 0;
+                text-align: center;
+                a{
+                    color: white;
+                    height: 100%;
+                    width: 100%;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        &.fixed{
+            position: fixed !important;
+            top: 0;
+            right: 0;
+            left: 0;
+        }
+    }
+}
+
+
+@media (min-width: $lg-screen){
+    header nav{
+        &#nav_responsive{
+            display: none;
+        }
+        
+        display: flex;
+        justify-content: flex-start;
+        padding: 1rem $gutters;
+
+        #main-logo{
+            margin-right: 3rem;
+        }
+
+        ul{
+            gap: 1rem;
+            a{
+                transition: opacity .3s ease;
+
+                &:hover{
+                    opacity: .7;
+                }
+            }
+
+            &.rs{
+                gap: .5rem;
+                margin-right: .5rem;
+                transition: opacity .3s ease;
+                li {
+                    opacity: 0;
+                    transform: translateY(-150%);
+                    transition: opacity .3s ease;
+                }
+            }
+        }
+
+        > div{
+            margin-left: auto;
+            display: flex;
+        }
+
+        &.ready {
+            ul.rs {
+                li {
+                    will-change: transform, opacity;
+
+                    animation-name: fallBounce;
+                    animation-duration: 900ms;
+                    animation-timing-function: cubic-bezier(.28,.84,.42,1);
+                    animation-fill-mode: both; 
+                }
+
+                @for $i from 1 through 12 {
+                    li:nth-child(#{$i}) {
+                        animation-delay: ($i - 1) * 0.1s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes fallBounce {
+  0% {
+    opacity: 0;
+    transform: translateY(-150%);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0%); 
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
