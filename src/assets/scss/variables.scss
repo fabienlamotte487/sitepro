@@ -8,7 +8,8 @@ $darkest: #1B1D20;
 $success: #56B53E;
 $error: #A70E0E;
 
-$degrade-primary: linear-gradient(to bottom, $primary-1, $primary-2);
+$degrade-primary: linear-gradient(-180deg, $primary-1, 50%, $primary-2 90%, $primary-2 100%);
+$degrade-secondary: linear-gradient(-180deg, $secondary-1, 40%, $secondary-2 60%, $secondary-2 100%);
 
 /* fonts */
 $font-weight-normal: 400;
@@ -16,11 +17,18 @@ $font-weight-bold: 700;
 $main-font: "jomhuria";
 $secondary-font: "roboto";
 
+$h1-font-size: 62px;
+$h2-font-size: 40px;
+$h3-font-size: 24px;
+$p-font-size: 15px;
+
+/* Media screen */
 $sm-screen: 576px;
 $md-screen: 768px;
 $lg-screen: 992px;
 $xl-screen: 1200px;
 $xxl-screen: 1400px;
 
+/* Gutters */
 $gutters: 2rem;
 $gutters-responsive: 1rem;

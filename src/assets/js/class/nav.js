@@ -5,6 +5,7 @@ export default class Nav{
         this.burgerButton = document.getElementById("burger-menu");
         this.toggleClassName = "showed";
         this.delayAnimRs = .3; // Time to second
+        this.navFixedThreshold = 75;
         this.init();
     }
 
@@ -54,12 +55,12 @@ export default class Nav{
         window.addEventListener('scroll', () => {
             if (!ticking) {
                 window.requestAnimationFrame(() => {
-                    if (window.scrollY > 150) {
+                    if (window.scrollY > this.navFixedThreshold) {
                         this.nav.classList.add('fixed');
                         this.navResponsive.classList.add('fixed');
                     } else {
-                        this.nav.classList.remove('fixed');
-                        this.navResponsive.classList.remove('fixed');
+                        // this.nav.classList.remove('fixed');
+                        // this.navResponsive.classList.remove('fixed');
                     }
                     ticking = false;
                 });

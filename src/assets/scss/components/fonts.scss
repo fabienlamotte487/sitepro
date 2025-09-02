@@ -9,3 +9,36 @@
     font-family: "roboto";
     src: url("./../fonts/roboto.ttf");
 }
+
+h1, h2{
+    font-family: $main-font;
+    font-weight: 300;
+}
+
+h1{
+    font-size: $h1-font-size;
+    height: 42px;
+    background: $degrade-primary;
+    -webkit-background-clip: text; /* nécessaire pour Chrome/Safari */
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    
+    span{
+        background: $degrade-secondary;
+        -webkit-background-clip: text; /* nécessaire pour Chrome/Safari */
+        background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+h2{
+    font-size: $h2-font-size;
+    line-height: 0.75;
+}
+
+p{
+    font-family: $secondary-font;
+    font-size: $p-font-size;
+}

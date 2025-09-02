@@ -55,7 +55,7 @@
                         </a>
                     </li>
                 </ul>
-                <button type="button" class="primary"><a href="#contact_me" title="Cliquez pour vous rendre au formulaire de contact" aria-label="Se rendre au formulaire de contact">Contactez moi</a></button>
+                <a href="#contact_me" class="btn primary" title="Cliquez pour vous rendre au formulaire de contact" aria-label="Se rendre au formulaire de contact">Contactez moi</a>
             </div>
         </nav>
         <nav id="nav_responsive" aria-label="Navigation mobile">
@@ -79,7 +79,33 @@
     </header>
     <main>
         <section id="presentation">
-            
+            <div id="branding">
+                <img src="/src/assets/img/png/wallart.png" class="wallart" />
+                <div class="matrogne">
+                    <picture>
+                        <source srcset="/src/assets/img/png/ma_trogne_200x200.png" media="(max-width: 991px)">
+                        <source srcset="/src/assets/img/png/ma_trogne_400x400.png" media="(min-width: 992px)">
+                        <img src="/src/assets/img/png/ma_trogne_400x400.png" alt="Photo d’illustration">
+                    </picture>
+                    <div>
+                        <h1>Fabien <span>Lamotte</span></h1>
+                        <p>
+                            Développeur web en EI
+                        </p>
+                        <div class="dispo-body">
+                            <div class="dispo-status"></div>
+                            <small class="dispo-message"></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="purpose">
+                <h2>Donnez à votre entreprise la visibilité numérique qu’elle mérite !</h2>
+                <div>
+                    <img src="/src/assets/img/svg/image-ordi.svg" alt="" />
+                    <p>J’accompagne les entreprises dans la création de leur site web, de l’idée au déploiement.</p>
+                </div>
+            </div>
         </section>
         <section id="why"></section>
         <section id="working_with_me"></section>

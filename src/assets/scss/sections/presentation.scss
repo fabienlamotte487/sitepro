@@ -1,0 +1,116 @@
+@use '../variables' as *;
+
+section#presentation{
+    #branding{
+      padding: 3rem 0;
+
+      p{
+        margin-bottom: 1rem;
+      }
+
+      .wallart{
+        display: none;
+      }
+
+      .matrogne{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: white;
+        font-family: $secondary-font;
+        div.dispo-body{
+          display: flex;
+          div.dispo-status{
+            height: 15px;
+            width: 15px;
+            border-radius: 15px;
+            margin-right: 5px;
+
+            &.yes {
+                background:$success;
+            }
+
+            &.no{
+                background:$error;
+            }
+          }
+        }
+      }
+
+    }
+    #purpose{
+      background: $degrade-primary;
+      padding: 1.5rem;
+
+      color: white;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      img{
+        height: 100px;
+        width: 100px;
+        animation: nuageFlottant 6s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+      }
+
+      > div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+    }
+    
+  @media (min-width: $md-screen){
+    #branding{
+      position:relative;
+      overflow: hidden;
+      
+      *{
+        z-index: 1;
+      }
+
+      .wallart{
+        display: block;
+        position:absolute;
+        z-index: 0;
+        top:-150px;
+        left:-150px;
+        transform: rotate(20deg);
+      }
+    }
+  }
+  
+  @media (min-width: $lg-screen){
+    #branding{
+      padding: 7rem 0;
+      > div {
+        width: 75%;
+        margin-left: auto;
+      }
+    }
+  }
+} 
+
+@keyframes nuageFlottant {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(4px, -6px); /* ×2 */
+  }
+  50% {
+    transform: translate(-4px, 4px); /* ×2 */
+  }
+  75% {
+    transform: translate(2px, -2px); /* ×2 */
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+

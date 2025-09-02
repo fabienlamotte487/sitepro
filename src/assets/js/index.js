@@ -1,7 +1,9 @@
 import './../scss/style.scss';
+import Dispo from './class/disponibility';
 import Nav from './class/nav';
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    const nav = new Nav()
+    new Nav()
+    new Dispo()
 });
