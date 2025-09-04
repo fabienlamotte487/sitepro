@@ -1,9 +1,11 @@
 @use '../variables' as *; 
 @use '../mixins/gutters.scss' as *; 
 
-section{
-    margin: $margin-section 0;
+main{
+    gap: $margin-section;
+}
 
+section{
     &:not(.no-gutters){
         @include generate-gutters(margin-left, margin-right);
     }
