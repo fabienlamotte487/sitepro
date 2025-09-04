@@ -18,16 +18,24 @@ h1, h2, h3{
 }
 
 h1{
-    height: 42px;
-    background: $degrade-primary;
-    -webkit-background-clip: text; /* nécessaire pour Chrome/Safari */
-    background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-    
+    display: flex;
+    flex-direction: column;
+
     span{
+        line-height: 0.65;
+    }
+
+    span:nth-child(1){
+        background: $degrade-primary;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    span:nth-child(2){
         background: $degrade-secondary;
-        -webkit-background-clip: text; /* nécessaire pour Chrome/Safari */
+        -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
         -webkit-text-fill-color: transparent;
@@ -52,4 +60,12 @@ p{
   #{$element} {
     @include responsive-font-sizes($sizes);
   }
+}
+
+
+@media (min-width: $lg-screen){
+    h1{
+        flex-direction: row;
+        gap: .5rem;
+    }
 }
