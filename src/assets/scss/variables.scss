@@ -66,5 +66,8 @@ $h2-margin-bottom: 2rem;
 
 
 /* Gutters */
-$gutters: 2rem;
-$gutters-responsive: 1rem;
+$gutters-map: (
+  $sm-screen: 1rem,
+  $md-screen: 2rem,
+  $lg-screen: 3rem
+);

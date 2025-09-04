@@ -1,0 +1,20 @@
+@use '../variables' as *; 
+
+@mixin generate-gutters($property: padding-left, $property2: padding-right) {
+  $first: true;
+  $prev: null;
+
+  @each $breakpoint, $gutter in $gutters-map {
+    @if $first {
+      #{$property}: $gutter;
+      #{$property2}: $gutter;
+      $first: false;
+    } @else if $gutter != $prev {
+      @media (min-width: #{$breakpoint}) {
+        #{$property}: $gutter;
+        #{$property2}: $gutter;
+      }
+    }
+    $prev: $gutter;
+  }
+}
