@@ -24,7 +24,7 @@ section#why{
         row-gap: $gap-list-y;
 
         li{
-            width: calc($responsive-item-size - $gap-list-x);
+            width: calc($responsive-item-size - ($gap-list-x/2));
             display: flex;
             justify-content: flex-end;
             align-items: center;
