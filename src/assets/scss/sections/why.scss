@@ -1,0 +1,72 @@
+@use '../variables' as *; 
+
+$gap-list-x: 10px;
+$gap-list-y: 50px;
+$icon-size: 24px;
+$responsive-item-size: 50%;
+$lg-item-size: 33.33%;
+
+section#why{
+    h2{
+        text-align: center;
+        margin-bottom: $h2-margin-bottom;
+    }
+
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0;
+        list-style: none;
+        width: 100%;
+        column-gap: $gap-list-x;
+        row-gap: $gap-list-y;
+
+        li{
+            width: calc($responsive-item-size - $gap-list-x);
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            text-align: right;
+            gap: 10px;
+            
+
+            p{
+                font-style: italic;
+            }
+
+            img{
+                height: $icon-size;
+                width: $icon-size;
+                background: $degrade-primary;
+                padding: 10px;
+                border-radius: 100%;
+            }
+
+            &:nth-child(even){
+                text-align: left;
+                flex-direction: row-reverse;
+            }
+        }
+    }
+}
+
+
+@media (min-width: $lg-screen){
+    section#why ul {
+        align-items: flex-start;
+        li {
+            width: calc($lg-item-size - $gap-list-x);
+            flex-direction: column-reverse;
+            justify-content: center;
+            &:nth-child(even){
+                flex-direction: column-reverse;
+            }
+
+            h3, p{
+                text-align: center;
+            }
+        }
+    }
+}
