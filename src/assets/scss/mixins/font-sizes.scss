@@ -1,0 +1,18 @@
+@mixin responsive-font-sizes($sizes) {
+  $prev-size: null;
+  $first: true;
+
+  @each $breakpoint, $size in $sizes {
+    @if $first {
+      // Valeur par défaut (sans media query)
+      font-size: $size;
+      $first: false;
+    } @else if $size != $prev-size {
+      // Media query seulement si la taille change
+      @media (min-width: #{$breakpoint}) {
+        font-size: $size;
+      }
+    }
+    $prev-size: $size;
+  }
+}

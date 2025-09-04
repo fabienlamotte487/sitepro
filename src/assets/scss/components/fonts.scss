@@ -1,4 +1,6 @@
 @use '../variables' as *;
+@use '../mixins/font-sizes.scss' as *;
+
 
 @font-face {
     font-family: $main-font;
@@ -10,13 +12,12 @@
     src: url("./../fonts/roboto.ttf");
 }
 
-h1, h2{
+h1, h2, h3{
     font-family: $main-font;
     font-weight: 300;
 }
 
 h1{
-    font-size: $h1-font-size;
     height: 42px;
     background: $degrade-primary;
     -webkit-background-clip: text; /* nécessaire pour Chrome/Safari */
@@ -34,11 +35,21 @@ h1{
 }
 
 h2{
-    font-size: $h2-font-size;
     line-height: 0.75;
+    color: white;
+}
+
+h3{
+    color: white;
 }
 
 p{
     font-family: $secondary-font;
-    font-size: $p-font-size;
+    color: white;
+}
+
+@each $element, $sizes in $font-sizes {
+  #{$element} {
+    @include responsive-font-sizes($sizes);
+  }
 }

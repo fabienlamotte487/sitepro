@@ -1,3 +1,10 @@
+/* Media screen */
+$sm-screen: 576px;
+$md-screen: 768px;
+$lg-screen: 992px;
+$xl-screen: 1200px;
+$xxl-screen: 1400px;
+
 /* colors */
 $primary-1: #FA9A10;
 $primary-2: #EB3738;
@@ -11,23 +18,52 @@ $error: #A70E0E;
 $degrade-primary: linear-gradient(-180deg, $primary-1, 50%, $primary-2 90%, $primary-2 100%);
 $degrade-secondary: linear-gradient(-180deg, $secondary-1, 40%, $secondary-2 60%, $secondary-2 100%);
 
+/* Section */ 
+$margin-section: 3rem;
+
 /* fonts */
 $font-weight-normal: 400;
 $font-weight-bold: 700;
 $main-font: "jomhuria";
 $secondary-font: "roboto";
 
-$h1-font-size: 62px;
-$h2-font-size: 40px;
-$h3-font-size: 24px;
-$p-font-size: 15px;
+$h1-font-size: (
+    $sm-screen: 62px,
+    $md-screen: 62px,
+    $lg-screen: 62px,
+    $xl-screen: 62px,
+    $xxl-screen: 62px
+);;
+$h2-font-size: (
+    $sm-screen: 40px,
+    $md-screen: 40px,
+    $lg-screen: 40px,
+    $xl-screen: 40px,
+    $xxl-screen: 40px
+);
+$h3-font-size: (
+    $sm-screen: 24px,
+    $md-screen: 24px,
+    $lg-screen: 24px,
+    $xl-screen: 24px,
+    $xxl-screen: 24px
+);
+$p-font-size: (
+    $sm-screen: 11px,
+    $md-screen: 11px,
+    $lg-screen: 11px,
+    $xl-screen: 11px,
+    $xxl-screen: 11px
+);
+$font-sizes: (
+  h1: $h1-font-size,
+  h2: $h2-font-size,
+  h3: $h3-font-size,
+  p: $p-font-size
+);
 
-/* Media screen */
-$sm-screen: 576px;
-$md-screen: 768px;
-$lg-screen: 992px;
-$xl-screen: 1200px;
-$xxl-screen: 1400px;
+$h2-margin-bottom: 2rem;
+
 
 /* Gutters */
 $gutters: 2rem;
