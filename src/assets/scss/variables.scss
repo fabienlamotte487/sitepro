@@ -28,32 +28,19 @@ $main-font: "jomhuria";
 $secondary-font: "roboto";
 
 $h1-font-size: (
-    $sm-screen: 62px,
-    $md-screen: 62px,
-    $lg-screen: 62px,
-    $xl-screen: 62px,
-    $xxl-screen: 62px
+  $sm-screen: 62px,
 );;
 $h2-font-size: (
-    $sm-screen: 40px,
-    $md-screen: 40px,
-    $lg-screen: 40px,
-    $xl-screen: 40px,
-    $xxl-screen: 40px
+  $sm-screen: 40px,
+  $md-screen: 48px,
 );
 $h3-font-size: (
-    $sm-screen: 24px,
-    $md-screen: 24px,
-    $lg-screen: 24px,
-    $xl-screen: 24px,
-    $xxl-screen: 24px
+  $sm-screen: 24px,
+  $md-screen: 32px,
 );
 $p-font-size: (
-    $sm-screen: 11px,
-    $md-screen: 11px,
-    $lg-screen: 11px,
-    $xl-screen: 11px,
-    $xxl-screen: 11px
+  $sm-screen: 11px,
+  $md-screen: 16px,
 );
 $font-sizes: (
   h1: $h1-font-size,
