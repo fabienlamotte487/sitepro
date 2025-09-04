@@ -2,7 +2,8 @@
 
 $gap-list-x: 10px;
 $gap-list-y: 50px;
-$icon-size: 24px;
+$responsive-icon-size: 24px;
+$lg-icon-size: 48px;
 $responsive-item-size: 50%;
 $lg-item-size: 33.33%;
 
@@ -36,13 +37,19 @@ section#why{
                 font-style: italic;
             }
 
-            img{
-                height: $icon-size;
-                width: $icon-size;
+            > div:has(img){
                 background: $degrade-primary;
-                padding: 10px;
+                padding: .5rem;
                 border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    height: $responsive-icon-size;
+                    width: $responsive-icon-size;
+                }
             }
+
 
             &:nth-child(even){
                 text-align: left;
@@ -66,6 +73,14 @@ section#why{
 
             h3, p{
                 text-align: center;
+            }
+            
+            > div:has(img){
+                padding: 1rem;
+                img{
+                    height: $lg-icon-size;
+                    width: $lg-icon-size;
+                }
             }
         }
     }
