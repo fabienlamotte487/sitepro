@@ -4,6 +4,21 @@ $widthInnerCircle: 100px;   // Cercle interne
 $circle: 250px;             // Cercle principal
 $borderWidth: 1rem;         // Taille de la bordure entre les images
 
+/* A partir de md */
+$widthInnerCircle-md: 200px;   // Cercle interne
+$circle-md: 500px;             // Cercle principal
+$borderWidth-md: 1.25rem;         // Taille de la bordure entre les images
+
+/* A partir de lg */
+$widthInnerCircle-lg: 200px;   // Cercle interne
+$circle-lg: 1000px;             // Cercle principal
+$borderWidth-lg: 2rem;         // Taille de la bordure entre les images
+
+/* A partir de xl */
+$widthInnerCircle-xl: 400px;   // Cercle interne
+$circle-xl: 1400px;             // Cercle principal
+$borderWidth-xl: 2rem;         // Taille de la bordure entre les images
+
 $contentMarginLeft: calc(35%);  // Marge gauche à appliquer pour le contenu textuel
 $contentMinHeight: $circle + 100px;     // Hauteur minimale à réserver pour le block (pour ajuster la hauteur du texte à celle du cercle
 
@@ -14,7 +29,7 @@ section#working_with_me{
   justify-content: flex-start;
   align-items: center;
   min-height: $contentMinHeight;
-  height: 100%;
+  overflow: hidden;
 
   .cercle {
     position: absolute;
@@ -27,6 +42,9 @@ section#working_with_me{
     grid-template-rows: 1fr 1fr;
     gap: $borderWidth;
     left: -150px;
+    top: 50%;
+    bottom: 50%;
+    margin: auto;
     transform: rotate(45deg);
     transition: transform .3s ease;
   }
@@ -103,6 +121,7 @@ section#working_with_me{
 
   > div {
     flex:1;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -129,7 +148,7 @@ section#working_with_me{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-left: $contentMarginLeft;
+    align-self: flex-end;
     margin-top: 1rem;
     gap: .5rem;
 
@@ -146,6 +165,84 @@ section#working_with_me{
           transition: opacity .3s ease;
         }
       }
+    }
+  }
+}
+
+@media (min-width: $md-screen){
+  section#working_with_me{
+    .cercle{
+      width: $circle-md;
+      height: $circle-md;
+      gap: $borderWidth-md;
+      left: -250px;
+    }
+
+    .inner-circle{
+      height: $widthInnerCircle-md;
+      width: $widthInnerCircle-md;
+      top: calc(50% - ($widthInnerCircle-md/2));
+      left: calc(50% - ($widthInnerCircle-md/2));
+    }
+  }
+}
+
+@media (min-width: $lg-screen){
+  section#working_with_me{
+    .cercle{
+      width: $circle-lg;
+      height: $circle-lg;
+      gap: $borderWidth-lg;
+      left: -550px;
+    }
+
+    .inner-circle{
+      height: $widthInnerCircle-lg;
+      width: $widthInnerCircle-lg;
+      top: calc(50% - ($widthInnerCircle-lg/2));
+      left: calc(50% - ($widthInnerCircle-lg/2));
+    }
+
+    padding-right: 3rem;
+    padding-top: 3rem;
+
+    h2{
+      align-self: flex-end;
+    }
+
+    > div {
+      width: 50%;
+      align-self: flex-end;
+    }
+  }
+}
+@media (min-width: $xl-screen){
+  section#working_with_me{
+    .cercle{
+      width: $circle-xl;
+      height: $circle-xl;
+      gap: $borderWidth-xl;
+      left: -750px;
+    }
+
+    .inner-circle{
+      height: $widthInnerCircle-xl;
+      width: $widthInnerCircle-xl;
+      top: calc(50% - ($widthInnerCircle-xl/2));
+      left: calc(50% - ($widthInnerCircle-xl/2));
+    }
+
+
+    h2{
+      align-self: flex-end;
+      padding-right: 10rem;
+      padding-top: 3rem;
+    }
+
+    > div {
+      width: 50%;
+      align-self: flex-end;
+      padding-right: 3rem;
     }
   }
 }
