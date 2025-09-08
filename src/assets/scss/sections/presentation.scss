@@ -3,6 +3,7 @@
 section#presentation{
     #branding{
       padding: 3rem 0;
+      width: 100%;
 
       p{
         margin-bottom: 1rem;
@@ -42,7 +43,7 @@ section#presentation{
     #purpose{
       background: $degrade-primary;
       padding: 1.5rem;
-
+      width: 100%;
       color: white;
       text-align: center;
       display: flex;

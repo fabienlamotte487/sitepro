@@ -8,6 +8,12 @@ main{
 }
 
 section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     &:not(.no-gutters){
         @include generate-gutters(margin-left, margin-right);
     }
