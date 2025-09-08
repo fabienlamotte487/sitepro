@@ -18,6 +18,14 @@
     justify-content: center;
     align-items: center;
 
+    &:has(img){
+        padding: .75rem;
+    }
+
+    &:disabled{
+        opacity: 0.5;
+    }
+
     @media (min-width: $lg-screen){
         &:hover{
             opacity: .8;

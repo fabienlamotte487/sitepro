@@ -169,15 +169,15 @@
         <section id="working_with_me">
             <h2>Le déroulement d'un projet</h2>
             <div>
-
                 <div class="cercle">
-                    <img src="/src/assets/img/jpg/hiver.jpg" alt="" />
-                    <img src="/src/assets/img/jpg/hiver.jpg" alt="" />
-                    <img src="/src/assets/img/jpg/hiver.jpg" alt="" />
-                    <img src="/src/assets/img/jpg/hiver.jpg" alt="" />
+                    <div class="inner-circle"></div>
+                    <div class="img-hiver"></div>
+                    <div class="img-hiver"></div>
+                    <div class="img-hiver"></div>
+                    <div class="img-hiver"></div>
                 </div>
                 <ul class="steps">
-                    <li>
+                    <li class="current">
                         <h3>Etape 1: Echanges et communication</h3>
                         <p>Nous discutons ensemble de votre projet , de vos besoins, et établissons un cahier des charges clair et complet.</p>
                     </li>
@@ -194,10 +194,15 @@
                         <p>Je livre l’application sur le web, et en assure gratuitement la maintenance pendant 3 mois.</p>
                     </li>
                 </ul>
-                <button type="button" class="btn primary">Etape suivante</button>
+                <div class="steps-nav">
+                    <button type="button" class="btn primary previous" disabled aria-label="Passer à l'étape précédente">
+                        <img src="/src/assets/img/svg/logo-arrow-left.svg" alt="Passer à l'étape précédente" title="Passer à l'étape précédente" />
+                    </button>
+                    <button type="button" class="btn primary next" aria-label="Passer à l'étape suivante">Etape suivante</button>
+                </div>
             </div>
         </section>
-        <section id="services">test 3</section>
+        <section id="services"></section>
         <section id="contact_me"></section>
     </main>
 </body>
