@@ -3,6 +3,8 @@
 
 main{
     gap: $margin-section;
+    display: flex;
+    flex-direction: column;
 }
 
 section{
