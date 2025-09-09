@@ -1,0 +1,16 @@
+@use '../variables' as *; 
+
+section#price_question{
+    display: flex;
+    background: red;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: $darkest;
+    gap: 1rem;
+
+    h2{
+        text-align: left;
+    }
+}

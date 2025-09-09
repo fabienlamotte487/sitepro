@@ -2,12 +2,14 @@
 
 $gap-list-x: 10px;
 $gap-list-y: 50px;
+
 $responsive-icon-size: 24px;
-$lg-icon-size: 48px;
 $responsive-item-size: 50%;
+
+$lg-icon-size: 48px;
 $lg-item-size: 33.33%;
 
-section#why{
+section#services{
     h2{
         text-align: center;
         margin-bottom: $h2-margin-bottom;
@@ -61,25 +63,30 @@ section#why{
 
 
 @media (min-width: $lg-screen){
-    section#why ul {
-        align-items: flex-start;
-        li {
-            width: calc($lg-item-size - $gap-list-x);
-            flex-direction: column-reverse;
-            justify-content: center;
-            &:nth-child(even){
+    section#services {
+        height: 100vh;
+        ul {
+            height: 100%;
+            justify-content: flex-start;
+            align-items: center;
+            li {
+                width: calc($lg-item-size - $gap-list-x);
                 flex-direction: column-reverse;
-            }
+                justify-content: center;
+                &:nth-child(even){
+                    flex-direction: column-reverse;
+                }
 
-            h3, p{
-                text-align: center;
-            }
-            
-            > div:has(img){
-                padding: 1rem;
-                img{
-                    height: $lg-icon-size;
-                    width: $lg-icon-size;
+                h3, p{
+                    text-align: center;
+                }
+                
+                > div:has(img){
+                    padding: 1rem;
+                    img{
+                        height: $lg-icon-size;
+                        width: $lg-icon-size;
+                    }
                 }
             }
         }

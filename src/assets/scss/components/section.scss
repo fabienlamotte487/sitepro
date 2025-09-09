@@ -1,8 +1,13 @@
 @use '../variables' as *; 
-@use '../mixins/gutters.scss' as *; 
+@use '../mixins/gutters' as *;
 
-main{
-    gap: $margin-section;
-    display: flex;
-    flex-direction: column;
+section{
+    padding-top: $section-padding;
+    padding-bottom: $section-padding;
+    @include apply-mixins();
+
+    &.no-gutters{
+        padding-left: 0;
+        padding-right: 0;
+    }
 }

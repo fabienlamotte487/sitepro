@@ -31,7 +31,7 @@ $h1-font-size: (
   $sm-screen: 62px,
 );;
 $h2-font-size: (
-  $sm-screen: 40px,
+  $sm-screen: 32px,
   $md-screen: 48px,
 );
 $h3-font-size: (
@@ -53,8 +53,8 @@ $font-sizes: (
 $h2-margin-bottom: 2rem;
 
 /* Gutters */
-$gutters-map: (
-  $sm-screen: .5rem,
-  $md-screen: 2rem,
-  $lg-screen: 3rem
-);
+$gutters-sm: 1rem;
+$gutters-md: 2rem;
+$gutters-lg: 3rem;
+
+$section-padding: 2rem;
