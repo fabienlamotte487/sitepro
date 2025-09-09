@@ -1,0 +1,68 @@
+@use '../variables' as *; 
+
+$lg-gap: 2rem;
+$first-column-width: 25%;
+$second-column-width: 75%;
+
+section#contact_me{
+    background-color: $darkest;
+
+    form{
+        .form-element {
+            display: flex;
+            flex-direction: column;
+            margin: 1rem 0;
+
+            label{
+                color: white;
+                font-family: $secondary-font;
+                margin-bottom: .25rem;
+            }
+
+            input, textarea{
+                outline: none;
+                border: none;
+                border-radius: 5px;
+                padding: 0.75rem 1rem;
+                font-family: $secondary-font;
+            }
+
+            textarea{
+                height: 150px;
+                padding-bottom: 3rem;
+            }
+
+            .message-help{
+                color: white;
+                font-family: $secondary-font;
+                margin-left: auto;
+                margin-top: .25rem;
+            }
+
+        }
+        button{
+            margin-left: auto;
+            margin-top: 1rem;
+        }
+    }
+}
+
+
+@media (min-width: $lg-screen){
+    section#contact_me{
+        form{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            flex-wrap: wrap;
+            gap: $lg-gap;
+
+            .column:nth-child(1){
+                width: calc($first-column-width - ($lg-gap/2));
+            }
+            .column:nth-child(2){
+                width: calc($second-column-width - ($lg-gap/2));
+            }
+        }
+    }
+}

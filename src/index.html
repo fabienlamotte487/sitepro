@@ -71,7 +71,7 @@
             <ul>
                 <li><a href="#services" title="" aria-label="Se rendre à la rubrique des services proposés">Liste de mes services</a></li>
                 <li><a href="#working_with_me" title="Cliquez pour comprendre le déroulement d'un projet" aria-label="Se rendre à la rubrique du déroulement d'un projet">Le déroulement d'un projet</a></li>
-                <li><a href="#contact_me" title="Cliquez pour vous rendre au formulaire de contact" aria-label="Se rendre au formulaire de contact">Mes services</a></li>
+                <li><a href="#contact_me" title="Cliquez pour vous rendre au formulaire de contact" aria-label="Se rendre au formulaire de contact">Me contacter</a></li>
             </ul>
         </nav>
     </header>
@@ -187,7 +187,7 @@
                 <h2 class="no-mb">Que choisir et à quel prix ?</h2>
                 <p>Listons ensemble les besoins de votre projet afin que je puisse vous proposer la meilleure solution.</p>
             </div>                
-            <button type="button" class="btn primary">Demandez un devis</button>
+            <a href="#contact_me" role="button" class="btn primary">Demandez un devis</a>
         </section>
         <section id="working_with_me">
             <h2>Le déroulement d'un projet</h2>
@@ -225,7 +225,77 @@
                 </div>
             </div>
         </section>
-        <section id="contact_me"></section>
+        <section id="contact_me">
+            <h2>Votre aventure commence ici</h2>
+            <form action="/" method="POST">
+                <div class="column">
+                    <div class="form-element">
+                        <label for="email">Votre adresse de messagerie:</label>
+                        <input type="email" name="email" id="email" placeholder="jeandupont@google.com" />
+                    </div>
+                    <div class="form-element">
+                        <label for="object">Objet de votre message:</label>
+                        <input type="type" name="object" id="object" placeholder="Demande de devis pour mon site web" />
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="form-element">
+                        <label for="message">Votre message:</label>
+                        <textarea name="message" id="message" maxlength="1000" aria-describedby="message-help" placeholder="J'écris ici mon message..."></textarea>
+                        <div class="message-help" aria-live="polite"><span>1000</span> caractères restants</div>
+                    </div>
+                </div>
+                <button type="submit" class="btn primary">Envoyer le message</button>
+            </form>
+        </section>
+        <footer>
+            <ul>
+                <li>
+                    <a><h2>Mentions légales</h2>></a>
+                </li>
+                <li>
+                    <h2>Retrouvez-moi sur les réseaux</h2>
+                    <ul class="rs">
+                        <li>
+                            <a 
+                                href="https://www.facebook.com/people/Fabien-Lamotte/pfbid02dXXuCocXYZe7JdMRtsczppGuPpvkKTUKQUSpCBu3W4XzzqvQHpqZpVstEt2yXQadl/" 
+                                title="Lien vers mon profil Facebook" 
+                                aria-label="Accéder à mon profil Facebook"
+                                target="_blank">
+                                <img src="/src/assets/img/svg/logo-facebook.svg" alt="Logo Facebook" title="Logo Facebook" width="32" height="32" />
+                            </a>
+                        </li>
+                        <li>
+                            <a 
+                                href="https://www.malt.fr/profile/fabienlamotte" 
+                                title="Lien vers mon profil Malt" 
+                                aria-label="Accéder à mon profil Malt" 
+                                target="_blank">
+                                <img src="/src/assets/img/svg/logo-malt.svg" alt="Logo Malt" title="Logo Malt" width="32" height="32" />
+                            </a>
+                        </li>
+                        <li>
+                            <a 
+                                href="https://www.instagram.com/fabienlamottedev/" 
+                                title="Lien vers mon profil Intagram" 
+                                aria-label="Accéder à mon profil Intagram" 
+                                target="_blank">
+                                <img src="/src/assets/img/svg/logo-instagram.svg" alt="Logo Instagram" title="Logo Instagram" width="32" height="32" />
+                            </a>
+                        </li>
+                        <li>
+                            <a 
+                                href="https://www.linkedin.com/in/fabien-lamotte-305043200/" 
+                                title="Lien vers mon profil Linkedin" 
+                                aria-label="Accéder à mon profil Linkedin" 
+                                target="_blank">
+                                <img src="/src/assets/img/svg/logo-linkedin.svg" alt="Logo Linkedin" title="Logo Linkedin" width="32" height="32" />
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </footer>
     </main>
 </body>
 </html>
