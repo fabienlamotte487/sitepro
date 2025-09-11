@@ -1,204 +1,747 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fabien Lamotte EI</title>
-<script defer src="bundle.js"></script></head>
-<body>
-    <header>
-        <nav aria-label="Navigation grand écran">
-            <a href="#presentation" title="Accéder à la rubrique de présentation" aria-label="Accéder à la rubrique de présentation" id="main-logo">
-                <img src="images/main-logob077830e747677d4bc3a.svg" title="Logo principal" alt="Logo principal" />
-            </a>
-            <ul>
-                <li><a href="#why" title="" aria-label="Se rendre à la rubrique Pourquoi un site web ?">Pourquoi un site web ?</a></li>
-                <li><a href="#working_with_me" title="Cliquez pour comprendre le déroulement d'un projet" aria-label="Se rendre à la rubrique du déroulement d'un projet">Le déroulement d'un projet</a></li>
-                <li><a href="#services" title="Accédez à mes services" aria-label="Se rendre à la rubrique de mes services proposés">Mes services</a></li>
-            </ul>
-            <div>
-                <ul class="rs">
-                    <li>
-                        <a 
-                            href="https://www.facebook.com/people/Fabien-Lamotte/pfbid02dXXuCocXYZe7JdMRtsczppGuPpvkKTUKQUSpCBu3W4XzzqvQHpqZpVstEt2yXQadl/" 
-                            title="Lien vers mon profil Facebook" 
-                            aria-label="Accéder à mon profil Facebook"
-                            target="_blank">
-                            <img src="images/logo-facebook5937c46aeff2d2141434.svg" alt="Logo Facebook" title="Logo Facebook" width="32" height="32" />
-                        </a>
-                    </li>
-                    <li>
-                        <a 
-                            href="https://www.malt.fr/profile/fabienlamotte" 
-                            title="Lien vers mon profil Malt" 
-                            aria-label="Accéder à mon profil Malt" 
-                            target="_blank">
-                            <img src="images/logo-malt8abb37ce8c73ab21e487.svg" alt="Logo Malt" title="Logo Malt" width="32" height="32" />
-                        </a>
-                    </li>
-                    <li>
-                        <a 
-                            href="https://www.instagram.com/fabienlamottedev/" 
-                            title="Lien vers mon profil Intagram" 
-                            aria-label="Accéder à mon profil Intagram" 
-                            target="_blank">
-                            <img src="images/logo-instagrama358d99d6d2e5a6f8558.svg" alt="Logo Instagram" title="Logo Instagram" width="32" height="32" />
-                        </a>
-                    </li>
-                    <li>
-                        <a 
-                            href="https://www.linkedin.com/in/fabien-lamotte-305043200/" 
-                            title="Lien vers mon profil Linkedin" 
-                            aria-label="Accéder à mon profil Linkedin" 
-                            target="_blank">
-                            <img src="images/logo-linkedin1c0c525585fa13f20e05.svg" alt="Logo Linkedin" title="Logo Linkedin" width="32" height="32" />
-                        </a>
-                    </li>
-                </ul>
-                <a href="#contact_me" class="btn primary" title="Cliquez pour vous rendre au formulaire de contact" aria-label="Se rendre au formulaire de contact">Contactez moi</a>
-            </div>
-        </nav>
-        <nav id="nav_responsive" aria-label="Navigation mobile">
-            <div>
-                <a href="#presentation" title="Accéder à la rubrique de présentation" aria-label="Accéder à la rubrique de présentation">
-                    <img src="images/main-logob077830e747677d4bc3a.svg" title="Logo principal" alt="Logo principal" />
-                </a>
-                <bouton type="button" aria-label="Déplier le menu mobile" id="burger-menu">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </bouton>
-            </div>
-            <ul>
-                <li><a href="#why" title="" aria-label="Se rendre à la rubrique Pourquoi un site web ?">Pourquoi un site web ?</a></li>
-                <li><a href="#working_with_me" title="Cliquez pour comprendre le déroulement d'un projet" aria-label="Se rendre à la rubrique du déroulement d'un projet">Le déroulement d'un projet</a></li>
-                <li><a href="#services" title="Accédez à mes services" aria-label="Se rendre à la rubrique de mes services proposés">Mes services</a></li>
-                <li><a href="#contact_me" title="Cliquez pour vous rendre au formulaire de contact" aria-label="Se rendre au formulaire de contact">Mes services</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="presentation" class="no-gutters">
-            <div id="branding">
-                <img src="images/wallartedc01a1297c027bab12a.png" class="wallart" />
-                <div class="matrogne">
-                    <picture>
-                        <source srcset="images/ma_trogne_200x20045986559b0222be9fbf7.png" media="(max-width: 991px)">
-                        <source srcset="images/ma_trogne_400x400b42b2a0f8ad7ea5e653b.png" media="(min-width: 992px)">
-                        <img src="images/ma_trogne_400x400b42b2a0f8ad7ea5e653b.png" alt="Photo d’illustration">
-                    </picture>
-                    <div>
-                        <h1><span>Fabien</span><span>Lamotte</span></h1>
-                        <p>
-                            Développeur web en EI
-                        </p>
-                        <div class="dispo-body">
-                            <div class="dispo-status"></div>
-                            <small class="dispo-message"></small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="purpose">
-                <h2>Donnez à votre entreprise la visibilité numérique qu’elle mérite !</h2>
-                <div>
-                    <img src="images/image-ordif6da2ad5ab6a4c8d5554.svg" alt="" />
-                    <p>J’accompagne les entreprises dans la création de leur site web, de l’idée au déploiement.</p>
-                </div>
-            </div>
-        </section>
-        <section id="why">
-            <h2>Pourquoi un site web ?</h2>
-            <ul>
-                <li>
-                    <div>
-                        <h3>Crédibilité</h3>
-                        <p>Un site professionnel inspire confiance !</p>
-                    </div>
-                    <div>
-                        <img src="images/logo-trustac57b3960e766456af2b.svg" alt="" title="" />
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <h3>Visibilité</h3>
-                        <p>Apparaissez dans les recherches de vos prospects !</p>
-                    </div>
-                    <div>
-                        <img src="images/logo-visibilityfd6ee1fede8045289a70.svg" alt="" title="" />
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <h3>Présentation</h3>
-                        <p>Affichez vos services 24h/24 !</p>
-                    </div>
-                    <div>
-                        <img src="images/logo-shopc8aaf35ea7360ea43e31.svg" alt="" title="" />
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <h3>Prospection</h3>
-                        <p>Attirez prospect et nouveaux clients !</p>
-                    </div>
-                    <div>
-                        <img src="images/logo-targetaca575d783d7d7302cc2.svg" alt="" title="" />
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <h3>Image de marque</h3>
-                        <p>Contrôlez et soignez votre image !</p>
-                    </div>
-                    <div>
-                        <img src="images/logo-maquetteb3461541acfbf4893d67.svg" alt="" title="" />
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <h3>Contact</h3>
-                        <p>Facilitez échanges et demandes clients !</p>
-                    </div>
-                    <div>
-                        <img src="images/logo-contact2633e372c6c0bb5d5799.svg" alt="" title="" />
-                    </div>
-                </li>
-            </ul>
-        </section>
-        <section id="working_with_me">
-            <h2>Le déroulement d'un projet</h2>
-            <div>
-
-                <div class="cercle">
-                    <img src="images/hiver7e565f9a96a0dfafc3c6.jpg" alt="" />
-                    <img src="images/hiver7e565f9a96a0dfafc3c6.jpg" alt="" />
-                    <img src="images/hiver7e565f9a96a0dfafc3c6.jpg" alt="" />
-                    <img src="images/hiver7e565f9a96a0dfafc3c6.jpg" alt="" />
-                </div>
-                <ul class="steps">
-                    <li>
-                        <h3>Etape 1: Echanges et communication</h3>
-                        <p>Nous discutons ensemble de votre projet , de vos besoins, et établissons un cahier des charges clair et complet.</p>
-                    </li>
-                    <li>
-                        <h3>Etape 2: Maquettage</h3>
-                        <p>Je réalise une première maquette de votre solution, que nous réviserons ensemble pour qu’elle corresponde parfaitement à vos attentes.</p>
-                    </li>
-                    <li>
-                        <h3>Etape 3: Développement et test</h3>
-                        <p>Une fois la validation de la maquette, nous passons en phase de développement. A l’issue du développement, des tests sont organisés avec vous afin de valider cette étape.</p>
-                    </li>
-                    <li>
-                        <h3>Etape 4: Déploiement et maintenance</h3>
-                        <p>Je livre l’application sur le web, et en assure gratuitement la maintenance pendant 3 mois.</p>
-                    </li>
-                </ul>
-                <button type="button" class="btn primary">Etape suivante</button>
-            </div>
-        </section>
-        <section id="services">test 3</section>
-        <section id="contact_me"></section>
-    </main>
-</body>
-</html>
+<head><script defer src="bundle.js"></script></head>Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module not found: Error: Can't resolve '/src/assets/favicon/apple-icon-57x57.png' in 'F:\Portfolio\fabienlamotte\src'
+  ModuleNotFoundError: Module not found: Error: Can't resolve '/src/assets/favicon/apple-icon-57x57.png' in 'F:\Portfolio\fabienlamotte\src'
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\Compilation.js:2265:28
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:949:13
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:10:1)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:347:22
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:9:1)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:532:22
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:163:10
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:807:25
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1034:8
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1163:5
+      at F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:6883:13
+      at Array.<anonymous> (F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1138:14)
+      at arrayEachFunc (F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:2517:19)
+      at Object.parallel (F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:6858:9)
+      at NormalModuleFactory._resolveResourceErrorHints (F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1062:12)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:994:18
+      at finishWithoutResolve (F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:568:11)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:657:14
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:89:43
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\forEachBail.js:39:13
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:89:43
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DirectoryExistsPlugin.js:43:15
+      at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+  Module not found: Error: Can't resolve '/src/assets/favicon/apple-icon-60x60.png' in 'F:\Portfolio\fabienlamotte\src'
+  ModuleNotFoundError: Module not found: Error: Can't resolve '/src/assets/favicon/apple-icon-60x60.png' in 'F:\Portfolio\fabienlamotte\src'
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\Compilation.js:2265:28
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:949:13
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:10:1)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:347:22
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:9:1)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:532:22
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:163:10
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:807:25
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1034:8
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1163:5
+      at F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:6883:13
+      at Array.<anonymous> (F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1138:14)
+      at arrayEachFunc (F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:2517:19)
+      at Object.parallel (F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:6858:9)
+      at NormalModuleFactory._resolveResourceErrorHints (F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1062:12)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:994:18
+      at finishWithoutResolve (F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:568:11)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:657:14
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:89:43
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\forEachBail.js:39:13
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:89:43
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DirectoryExistsPlugin.js:43:15
+      at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+  Module not found: Error: Can't resolve '/src/assets/favicon/apple-icon-72x72.png' in 'F:\Portfolio\fabienlamotte\src'
+  ModuleNotFoundError: Module not found: Error: Can't resolve '/src/assets/favicon/apple-icon-72x72.png' in 'F:\Portfolio\fabienlamotte\src'
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\Compilation.js:2265:28
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:949:13
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:10:1)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:347:22
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:9:1)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:532:22
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:163:10
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:807:25
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1034:8
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1163:5
+      at F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:6883:13
+      at Array.<anonymous> (F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1138:14)
+      at arrayEachFunc (F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:2517:19)
+      at Object.parallel (F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:6858:9)
+      at NormalModuleFactory._resolveResourceErrorHints (F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1062:12)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:994:18
+      at finishWithoutResolve (F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:568:11)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:657:14
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:89:43
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\forEachBail.js:39:13
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:89:43
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DirectoryExistsPlugin.js:43:15
+      at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+  Module not found: Error: Can't resolve '/src/assets/favicon/apple-icon-76x76.png' in 'F:\Portfolio\fabienlamotte\src'
+  ModuleNotFoundError: Module not found: Error: Can't resolve '/src/assets/favicon/apple-icon-76x76.png' in 'F:\Portfolio\fabienlamotte\src'
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\Compilation.js:2265:28
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:949:13
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:10:1)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:347:22
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:9:1)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:532:22
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:163:10
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:807:25
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1034:8
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1163:5
+      at F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:6883:13
+      at Array.<anonymous> (F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1138:14)
+      at arrayEachFunc (F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:2517:19)
+      at Object.parallel (F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:6858:9)
+      at NormalModuleFactory._resolveResourceErrorHints (F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1062:12)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:994:18
+      at finishWithoutResolve (F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:568:11)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:657:14
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:89:43
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\forEachBail.js:39:13
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:89:43
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DirectoryExistsPlugin.js:43:15
+      at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+  Module not found: Error: Can't resolve '/src/assets/favicon/apple-icon-114x114.png' in 'F:\Portfolio\fabienlamotte\src'
+  ModuleNotFoundError: Module not found: Error: Can't resolve '/src/assets/favicon/apple-icon-114x114.png' in 'F:\Portfolio\fabienlamotte\src'
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\Compilation.js:2265:28
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:949:13
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:10:1)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:347:22
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:9:1)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:532:22
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:163:10
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:807:25
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1034:8
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1163:5
+      at F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:6883:13
+      at Array.<anonymous> (F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1138:14)
+      at arrayEachFunc (F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:2517:19)
+      at Object.parallel (F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:6858:9)
+      at NormalModuleFactory._resolveResourceErrorHints (F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1062:12)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:994:18
+      at finishWithoutResolve (F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:568:11)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:657:14
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:89:43
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\forEachBail.js:39:13
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:89:43
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DirectoryExistsPlugin.js:43:15
+      at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+  Module not found: Error: Can't resolve '/src/assets/favicon/apple-icon-120x120.png' in 'F:\Portfolio\fabienlamotte\src'
+  ModuleNotFoundError: Module not found: Error: Can't resolve '/src/assets/favicon/apple-icon-120x120.png' in 'F:\Portfolio\fabienlamotte\src'
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\Compilation.js:2265:28
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:949:13
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:10:1)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:347:22
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:9:1)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:532:22
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:163:10
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:807:25
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1034:8
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1163:5
+      at F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:6883:13
+      at Array.<anonymous> (F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1138:14)
+      at arrayEachFunc (F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:2517:19)
+      at Object.parallel (F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:6858:9)
+      at NormalModuleFactory._resolveResourceErrorHints (F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1062:12)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:994:18
+      at finishWithoutResolve (F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:568:11)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:657:14
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:89:43
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\forEachBail.js:39:13
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:89:43
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DirectoryExistsPlugin.js:43:15
+      at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+  Module not found: Error: Can't resolve '/src/assets/favicon/apple-icon-144x144.png' in 'F:\Portfolio\fabienlamotte\src'
+  ModuleNotFoundError: Module not found: Error: Can't resolve '/src/assets/favicon/apple-icon-144x144.png' in 'F:\Portfolio\fabienlamotte\src'
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\Compilation.js:2265:28
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:949:13
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:10:1)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:347:22
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:9:1)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:532:22
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:163:10
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:807:25
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1034:8
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1163:5
+      at F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:6883:13
+      at Array.<anonymous> (F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1138:14)
+      at arrayEachFunc (F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:2517:19)
+      at Object.parallel (F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:6858:9)
+      at NormalModuleFactory._resolveResourceErrorHints (F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1062:12)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:994:18
+      at finishWithoutResolve (F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:568:11)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:657:14
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:89:43
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\forEachBail.js:39:13
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:89:43
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DirectoryExistsPlugin.js:43:15
+      at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+  Module not found: Error: Can't resolve '/src/assets/favicon/apple-icon-152x152.png' in 'F:\Portfolio\fabienlamotte\src'
+  ModuleNotFoundError: Module not found: Error: Can't resolve '/src/assets/favicon/apple-icon-152x152.png' in 'F:\Portfolio\fabienlamotte\src'
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\Compilation.js:2265:28
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:949:13
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:10:1)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:347:22
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:9:1)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:532:22
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:163:10
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:807:25
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1034:8
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1163:5
+      at F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:6883:13
+      at Array.<anonymous> (F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1138:14)
+      at arrayEachFunc (F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:2517:19)
+      at Object.parallel (F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:6858:9)
+      at NormalModuleFactory._resolveResourceErrorHints (F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1062:12)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:994:18
+      at finishWithoutResolve (F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:568:11)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:657:14
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:89:43
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\forEachBail.js:39:13
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:89:43
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DirectoryExistsPlugin.js:43:15
+      at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+  Module not found: Error: Can't resolve '/src/assets/favicon/apple-icon-180x180.png' in 'F:\Portfolio\fabienlamotte\src'
+  ModuleNotFoundError: Module not found: Error: Can't resolve '/src/assets/favicon/apple-icon-180x180.png' in 'F:\Portfolio\fabienlamotte\src'
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\Compilation.js:2265:28
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:949:13
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:10:1)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:347:22
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:9:1)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:532:22
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:163:10
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:807:25
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1034:8
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1163:5
+      at F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:6883:13
+      at Array.<anonymous> (F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1138:14)
+      at arrayEachFunc (F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:2517:19)
+      at Object.parallel (F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:6858:9)
+      at NormalModuleFactory._resolveResourceErrorHints (F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1062:12)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:994:18
+      at finishWithoutResolve (F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:568:11)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:657:14
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:89:43
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\forEachBail.js:39:13
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:89:43
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DirectoryExistsPlugin.js:43:15
+      at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+  Module not found: Error: Can't resolve '/src/assets/favicon/android-icon-192x192.png' in 'F:\Portfolio\fabienlamotte\src'
+  ModuleNotFoundError: Module not found: Error: Can't resolve '/src/assets/favicon/android-icon-192x192.png' in 'F:\Portfolio\fabienlamotte\src'
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\Compilation.js:2265:28
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:949:13
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:10:1)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:347:22
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:9:1)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:532:22
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:163:10
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:807:25
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1034:8
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1163:5
+      at F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:6883:13
+      at Array.<anonymous> (F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1138:14)
+      at arrayEachFunc (F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:2517:19)
+      at Object.parallel (F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:6858:9)
+      at NormalModuleFactory._resolveResourceErrorHints (F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1062:12)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:994:18
+      at finishWithoutResolve (F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:568:11)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:657:14
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:89:43
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\forEachBail.js:39:13
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:89:43
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DirectoryExistsPlugin.js:43:15
+      at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+  Module not found: Error: Can't resolve '/src/assets/favicon/favicon-32x32.png' in 'F:\Portfolio\fabienlamotte\src'
+  ModuleNotFoundError: Module not found: Error: Can't resolve '/src/assets/favicon/favicon-32x32.png' in 'F:\Portfolio\fabienlamotte\src'
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\Compilation.js:2265:28
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:949:13
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:10:1)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:347:22
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:9:1)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:532:22
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:163:10
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:807:25
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1034:8
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1163:5
+      at F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:6883:13
+      at Array.<anonymous> (F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1138:14)
+      at arrayEachFunc (F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:2517:19)
+      at Object.parallel (F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:6858:9)
+      at NormalModuleFactory._resolveResourceErrorHints (F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1062:12)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:994:18
+      at finishWithoutResolve (F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:568:11)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:657:14
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:89:43
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\forEachBail.js:39:13
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:89:43
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DirectoryExistsPlugin.js:43:15
+      at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+  Module not found: Error: Can't resolve '/src/assets/favicon/favicon-96x96.png' in 'F:\Portfolio\fabienlamotte\src'
+  ModuleNotFoundError: Module not found: Error: Can't resolve '/src/assets/favicon/favicon-96x96.png' in 'F:\Portfolio\fabienlamotte\src'
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\Compilation.js:2265:28
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:949:13
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:10:1)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:347:22
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:9:1)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:532:22
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:163:10
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:807:25
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1034:8
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1163:5
+      at F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:6883:13
+      at Array.<anonymous> (F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1138:14)
+      at arrayEachFunc (F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:2517:19)
+      at Object.parallel (F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:6858:9)
+      at NormalModuleFactory._resolveResourceErrorHints (F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1062:12)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:994:18
+      at finishWithoutResolve (F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:568:11)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:657:14
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:89:43
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\forEachBail.js:39:13
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:89:43
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DirectoryExistsPlugin.js:43:15
+      at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+  Module not found: Error: Can't resolve '/src/assets/favicon/favicon-16x16.png' in 'F:\Portfolio\fabienlamotte\src'
+  ModuleNotFoundError: Module not found: Error: Can't resolve '/src/assets/favicon/favicon-16x16.png' in 'F:\Portfolio\fabienlamotte\src'
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\Compilation.js:2265:28
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:949:13
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:10:1)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:347:22
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:9:1)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:532:22
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:163:10
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:807:25
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1034:8
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1163:5
+      at F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:6883:13
+      at Array.<anonymous> (F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1138:14)
+      at arrayEachFunc (F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:2517:19)
+      at Object.parallel (F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:6858:9)
+      at NormalModuleFactory._resolveResourceErrorHints (F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1062:12)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:994:18
+      at finishWithoutResolve (F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:568:11)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:657:14
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:89:43
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\forEachBail.js:39:13
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:89:43
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DirectoryExistsPlugin.js:43:15
+      at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+  Module not found: Error: Can't resolve '/src/assets/favicon/manifest.json' in 'F:\Portfolio\fabienlamotte\src'
+  ModuleNotFoundError: Module not found: Error: Can't resolve '/src/assets/favicon/manifest.json' in 'F:\Portfolio\fabienlamotte\src'
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\Compilation.js:2265:28
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:949:13
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:10:1)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:347:22
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:9:1)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:532:22
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:163:10
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:807:25
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1034:8
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1163:5
+      at F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:6883:13
+      at Array.<anonymous> (F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1138:14)
+      at arrayEachFunc (F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:2517:19)
+      at Object.parallel (F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:6858:9)
+      at NormalModuleFactory._resolveResourceErrorHints (F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1062:12)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:994:18
+      at finishWithoutResolve (F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:568:11)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:657:14
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:89:43
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\forEachBail.js:39:13
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:89:43
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DirectoryExistsPlugin.js:43:15
+      at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+  Module not found: Error: Can't resolve '/src/assets/favicon/ms-icon-144x144.png' in 'F:\Portfolio\fabienlamotte\src'
+  ModuleNotFoundError: Module not found: Error: Can't resolve '/src/assets/favicon/ms-icon-144x144.png' in 'F:\Portfolio\fabienlamotte\src'
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\Compilation.js:2265:28
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:949:13
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:10:1)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:347:22
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:9:1)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:532:22
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:163:10
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:807:25
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1034:8
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1163:5
+      at F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:6883:13
+      at Array.<anonymous> (F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1138:14)
+      at arrayEachFunc (F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:2517:19)
+      at Object.parallel (F:\Portfolio\fabienlamotte\node_modules\neo-async\async.js:6858:9)
+      at NormalModuleFactory._resolveResourceErrorHints (F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:1062:12)
+      at F:\Portfolio\fabienlamotte\node_modules\webpack\lib\NormalModuleFactory.js:994:18
+      at finishWithoutResolve (F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:568:11)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:657:14
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:89:43
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\forEachBail.js:39:13
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:89:43
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+      at eval (eval at create (F:\Portfolio\fabienlamotte\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+      at F:\Portfolio\fabienlamotte\node_modules\enhanced-resolve\lib\DirectoryExistsPlugin.js:43:15
+      at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+  
+  - Compilation.js:2265 
+    [fabienlamotte]/[webpack]/lib/Compilation.js:2265:28
+  
+  - NormalModuleFactory.js:949 
+    [fabienlamotte]/[webpack]/lib/NormalModuleFactory.js:949:13
+  
+  
+  - NormalModuleFactory.js:347 
+    [fabienlamotte]/[webpack]/lib/NormalModuleFactory.js:347:22
+  
+  
+  - NormalModuleFactory.js:532 
+    [fabienlamotte]/[webpack]/lib/NormalModuleFactory.js:532:22
+  
+  - NormalModuleFactory.js:163 
+    [fabienlamotte]/[webpack]/lib/NormalModuleFactory.js:163:10
+  
+  - NormalModuleFactory.js:807 
+    [fabienlamotte]/[webpack]/lib/NormalModuleFactory.js:807:25
+  
+  - NormalModuleFactory.js:1034 
+    [fabienlamotte]/[webpack]/lib/NormalModuleFactory.js:1034:8
+  
+  - NormalModuleFactory.js:1163 
+    [fabienlamotte]/[webpack]/lib/NormalModuleFactory.js:1163:5
+  
+  - async.js:6883 
+    [fabienlamotte]/[neo-async]/async.js:6883:13
+  
+  - NormalModuleFactory.js:1138 Array.<anonymous>
+    [fabienlamotte]/[webpack]/lib/NormalModuleFactory.js:1138:14
+  
+  - async.js:2517 arrayEachFunc
+    [fabienlamotte]/[neo-async]/async.js:2517:19
+  
+  - async.js:6858 Object.parallel
+    [fabienlamotte]/[neo-async]/async.js:6858:9
+  
+  - NormalModuleFactory.js:1062 NormalModuleFactory._resolveResourceErrorHints
+    [fabienlamotte]/[webpack]/lib/NormalModuleFactory.js:1062:12
+  
+  - NormalModuleFactory.js:994 
+    [fabienlamotte]/[webpack]/lib/NormalModuleFactory.js:994:18
+  
+  - Resolver.js:568 finishWithoutResolve
+    [fabienlamotte]/[enhanced-resolve]/lib/Resolver.js:568:11
+  
+  - Resolver.js:657 
+    [fabienlamotte]/[enhanced-resolve]/lib/Resolver.js:657:14
+  
+  - Resolver.js:718 
+    [fabienlamotte]/[enhanced-resolve]/lib/Resolver.js:718:5
+  
+  
+  - Resolver.js:718 
+    [fabienlamotte]/[enhanced-resolve]/lib/Resolver.js:718:5
+  
+  
+  - DescriptionFilePlugin.js:89 
+    [fabienlamotte]/[enhanced-resolve]/lib/DescriptionFilePlugin.js:89:43
+  
+  - Resolver.js:718 
+    [fabienlamotte]/[enhanced-resolve]/lib/Resolver.js:718:5
+  
+  
+  - Resolver.js:718 
+    [fabienlamotte]/[enhanced-resolve]/lib/Resolver.js:718:5
+  
+  
+  - Resolver.js:718 
+    [fabienlamotte]/[enhanced-resolve]/lib/Resolver.js:718:5
+  
+  
+  - forEachBail.js:39 
+    [fabienlamotte]/[enhanced-resolve]/lib/forEachBail.js:39:13
+  
+  - Resolver.js:718 
+    [fabienlamotte]/[enhanced-resolve]/lib/Resolver.js:718:5
+  
+  
+  - DescriptionFilePlugin.js:89 
+    [fabienlamotte]/[enhanced-resolve]/lib/DescriptionFilePlugin.js:89:43
+  
+  - Resolver.js:718 
+    [fabienlamotte]/[enhanced-resolve]/lib/Resolver.js:718:5
+  
+  
+  - Resolver.js:718 
+    [fabienlamotte]/[enhanced-resolve]/lib/Resolver.js:718:5
+  
+  
+  - DirectoryExistsPlugin.js:43 
+    [fabienlamotte]/[enhanced-resolve]/lib/DirectoryExistsPlugin.js:43:15
+  
+  - task_queues:81 process.processTicksAndRejections
+    node:internal/process/task_queues:81:21
+  
+  - Module not found: Error: Can't resolve '/src/assets/favicon/apple-icon-60x60.png' in 'F:\Portfolio\fabienlamotte\src'
+  
+  - ModuleNotFoundError: Module not found: Error: Can't resolve '/src/assets/favicon/apple-icon-60x60.png' in 'F:\Portfolio\fabienlamotte\src'
+  
+  - Compilation.js:2265 
+    [fabienlamotte]/[webpack]/lib/Compilation.js:2265:28
+  
+  - NormalModuleFactory.js:949 
+    [fabienlamotte]/[webpack]/lib/NormalModuleFactory.js:949:13
+  
+  
+  - NormalModuleFactory.js:347 
+    [fabienlamotte]/[webpack]/lib/NormalModuleFactory.js:347:22
+  
+  
+  - NormalModuleFactory.js:532 
+    [fabienlamotte]/[webpack]/lib/NormalModuleFactory.js:532:22
+  
+  - NormalModuleFactory.js:163 
+    [fabienlamotte]/[webpack]/lib/NormalModuleFactory.js:163:10
+  
+  - NormalModuleFactory.js:807 
+    [fabienlamotte]/[webpack]/lib/NormalModuleFactory.js:807:25
+  
+  - NormalModuleFactory.js:1034 
+    [fabienlamotte]/[webpack]/lib/NormalModuleFactory.js:1034:8
+  
+  - NormalModuleFactory.js:1163 
+    [fabienlamotte]/[webpack]/lib/NormalModuleFactory.js:1163:5
+  
+</pre>
